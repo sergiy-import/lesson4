@@ -1,0 +1,169 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(0, 0%, 90%, 0.705);
+    
+
+
+    .main {
+        width: 100%;
+        max-width: 1440px;
+        padding: 120px;
+        margin: 0 auto;
+        background-color: #FFF;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: roboto;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: $gold;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .pseudo-title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    .icon-holder {
+        margin-bottom: 40px;
+    }
+
+    .icon-bonfire-sharp-1 {
+        font-size: 20px;
+        color: $gold;
+    }
+}
+
+.border-holder {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+    max-width: 430px;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    &:before {
+        left: 0;
+        border-bottom: 1px solid $gold;
+        border-left: 1px solid $gold;
+    }
+
+    &:after {
+        right: 0;
+        border-bottom: 1px solid $gold;
+        border-right: 1px solid $gold;
+    }
+
+    span {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100px;
+    
+        &.top-left {
+            left: 0;
+            border-top: 1px solid $gold;
+            border-left: 1px solid $gold;
+            
+        }
+
+    
+        &.top-right {
+            right: 0;
+            border-top: 1px solid $gold;
+            border-right: 1px solid $gold;
+        }
+    
+    }
+}
+
+
+.main-photo {
+    border-right: 1px solid $gold;
+    padding: 65px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .items {
+        float: left;
+    }
+
+    .hero-name {
+        font-family: roboto;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: $dark-grey;
+       
+        
+    }
+
+    .hero-name:after {
+        content: '';
+        height: 20px;
+        width: 100px;
+        border-bottom: 1px solid $gold;
+    }
+
+    .speciality-holder {
+        font-family: raleway;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: $dark-grey;
+        margin: 30px;
+    }
+
+    .text-holder {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.info {
+    padding: 85px;
+
+    .name-border {
+        width: 100px;
+        border-bottom: 1px solid $gold;
+    }
+
+
+}
+
+.btn {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: $dark-grey;
+    padding: 5px 15px;
+    border: 1px solid $gold;
+}

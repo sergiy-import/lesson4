@@ -5,91 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about_me">about_me</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contacts">contacts</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Denis Novik</h1>
-        <div><img src="./images/main photo.svg" alt="main photo">
-        </div>
-        </section>
-        <section id="about_me">
-            <h2>about me</h2>
-            <div>
-            <p>Hi, I'm Denis – UX/UI designer from Minsk.
-                I'm interested in design and everything connected with it.</p>
-            <p>I'm studying at courses "Web and mobile design 
-                interfaces" in IT-Academy.</p>
-            <p>Ready to implement excellent projects
-                with wonderful people.</p>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>skills</h2>
-            <p>I work in such programs as</p>
-            <div>
-                <ul>
-                    <li>
-                        <img src="./images/Ps.svg" alt="Adobe Photoshop">
-                    </li>
-                    <li>
-                        <img src="./images/Ai.svg" alt="Adobe Illustrator">
-                    </li>
-                    <li>
-                        <img src="./images/AF.svg" alt="Adobe After Effects">
-                    </li>
-                    <li>
-                        <img src="./images/Figma.svg" alt="Figma">
-                    </li>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="/" class="nav-link active">Home</a> </li>
+                    <li class="nav-item"> <a href="#about" class="nav-link">About me</a> </li>
+                    <li class="nav-item"> <a href="#skills" class="nav-link">Skills</a> </li>
+                    <li class="nav-item"> <a href="#portfolio" class="nav-link">Portfolio</a> </li>
+                    <li class="nav-item"> <a href="#contacts" class="nav-link">Contacts</a> </li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Denis Novik</h1>
+                <div class="img-holder"><img src="./images/main_photo.jpg" alt="main_photo">
+                </div>
             </div>
         </section>
-        <section id="portfolio">
-            <h2>portfolio</h2>
-            <div>
-                <img src="./images/Fashion-Store.svg" alt="online fashion store">
-                <p>Online fashion store - Homepage</p>
-            </div>
-            <div>
-                <img src="./images/reebok_web.svg" alt="reebok web">
-                <p>Reebok Store - Concept</p>
-            </div>
-            <div>
-                <img src="./images/braun-landing.svg" alt="braun landing">
-                <p>Braun Landing Page - Concept</p>
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About me</h2>
+                <div class="text-holder">
+                    <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+                    <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                    <p>Ready to implement excellent projects with wonderful people.</p>
+                </div>
             </div>
         </section>
-        <section id="contacts">
-            <h2>contacts</h2>
-            <p>Want to know more or just chat? 
-                You are welcome!</p>
-                <div>
-                    <button> Send message </button>
-                    <div>
-                        <ul>
-                            <li><img src="./images/linkedin.svg" alt="linkedin"></li>
-                            <li><img src="./images/instagram.svg" alt="instagram"></li>
-                            <li><img src="./images/behance.svg" alt="behance"></li>
-                            <li><img src="./images/dribbble.svg" alt="dribbble"></li>
-                        </ul>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="title-holder">
+                    <h2></h2>
+                    <span class="pseudo-title">I work in such programs as</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="logo-holder"><img src="./images/Ps-.svg" alt="Adobe
+                            Photoshop"></div>
+                            <h3>Adobe Photoshop</h3>
+                            <div class="rating-holder"><img src="./images/rating2stars.svg" alt="2stars">
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="logo-holder"><img src="./images/Ai-.svg" alt="Adobe
+                            Illustrator"></div>
+                            <h3>Adobe Illustrator</h3>
+                            <div class="rating-holder"><img src="./images/rating3stars.svg" alt="3stars">
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="logo-holder"><img src="./images/Ae-.svg" alt="Adobe
+                            After Effects"></div>
+                            <h3>Adobe After Effects</h3>
+                            <div class="rating-holder"><img src="./images/rating4stars.svg" alt="4stars">
+                            </div>
+                    </div>
+                    <div class="col col-figma">
+                            <div class="logo-holder"><img src="./images/Figma-.svg" alt="Figma"></div>
+                            <h3>Figma</h3>
+                            <div class="rating-holder"><img src="./images/rating5stars.svg" alt="5stars">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-holder">
+                    <div class="img-holder"><img src="./images/Fashion-Store.svg" alt="fashion-Store">
+                    </div>
+                    <div class="link-holder">
+                        <a href="#" class="portfolio-link">Online fashion store - Homepage</a>
+                    </div>
+                </div>
+                <div class="portfolio-holder">
+                    <div class="img-holder"><img src="./images/reebok_web.svg" alt="reebok_web">
+                    </div>
+                    <div class="link-holder">
+                        <a href="#" class="portfolio-link">Reebok Store - Concept</a>
+                    </div>
+                </div>
+                <div class="portfolio-holder">
+                    <div class="img-holder"><img src="./images/braun-landing.svg" alt="braun-landing">
+                    </div>
+                    <div class="link-holder">
+                        <a href="#" class="portfolio-link">Braun Landing Page - Concept</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="title-holder">
+                    <h2>Contacts</h2>
+                    <span class="pseudo-title">Want to know more or just chat? You are welcome!</span>
+                </div>
+                    <div class="btn-holder">
+                        <a href="#" class="btn">Send message</a>
+                    </div>
+                <ul class="social-item">
+                    <li class="social-list">
+                        <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
+                    </li>
+                    <li class="social-list">
+                        <a href="#"><img src="./images/instagram.svg" alt="instagram"></a>
+                    </li>
+                    <li class="social-list">
+                        <a href="#"><img src="./images/behance.svg" alt="behance"></a>
+                    </li>
+                    <li class="social-list">
+                        <a href="#"><img src="./images/dribbble.svg" alt="dribbble"></a>
+                    </li>
+                </ul>
+                <div class="text-holder">
+                    <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Like me on
-            LinkedIn, Instagram, Behance, Dribble</p>
-    </footer>
 </body>
 </html>

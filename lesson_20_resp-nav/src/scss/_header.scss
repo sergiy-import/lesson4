@@ -1,0 +1,43 @@
+.header {
+    position: relative;
+    padding: 17px 0;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-holder {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+    }
+
+    .nav-list {
+        // display: flex;
+        // justify-content: space-between;
+        padding-top: 0;
+        position: relative;
+        list-style: none;
+    }
+
+    li {
+        
+        
+    }
+
+    .nav-link {
+        color: #2f281e;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration: none;
+
+        &:hover {
+            color: #ff9908;
+        }
+    }
+}
